@@ -1,0 +1,75 @@
+/* Structure*/
+body {
+    background: beige;
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(assignments/01-basic-html/images/stock-background.jpg);
+}
+
+/* Navigation */
+a {
+    text-decoration: none;
+    color: black;
+    background: maroon;
+    padding: 4px;
+    border-radius: 3px;
+    margin: 5px;
+}
+
+a:hover {
+    background: lightblue
+}
+
+/* Images */
+img {
+    border: 5px solid green;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 40px;
+}
+
+#home-nav a {
+    color: yellow;
+    text-decoration: none;
+    color: black;
+}
+
+/*Tables*/
+table {
+    border-collapse: collapse;
+}
+
+th{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+    background-color: darkolivegreen;
+}
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    background-color: olive;
+}
+
+/* Typography */
+h1 {
+    color: darkslategrey;
+    font-weight: bold;
+}
+
+h2 {
+    color: darkgrey;
+    font-weight: bold;
+}
+
+p {
+    color: dimgray;
+}
+
+#content {
+    margin: 20px;
+    background: rgb(111, 154, 154);
+    width: 75%;
+    padding: 20px;
+    border-radius: 10px;
+}
