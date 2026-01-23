@@ -13,13 +13,7 @@ body {
 }
 
 #sec-1-img {
-
-}
-
-#right-side-section-1 { /* trying to center image and text vertically for <600px*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 25%;
 }
 
 /* Navigation */
