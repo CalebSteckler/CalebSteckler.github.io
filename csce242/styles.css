@@ -2,7 +2,10 @@
 body {
     background: beige;
     font-family: Arial, Helvetica, sans-serif;
-    background:url(assignments/01-basic-html/images/stock-background.jpg);
+}
+
+#page-2 body {
+    background:url(images/stock-background.jpg);
 }
 
 /* Navigation */
