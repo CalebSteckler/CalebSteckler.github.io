@@ -71,6 +71,73 @@ body {
     padding-left: 0px;
 }
 
+/* Projects */
+
+#projects-header {
+    text-align: center;
+    text-decoration: underline;
+    color: black;
+}
+
+#projects-list ol {
+    padding-left: 0px;
+}
+
+#projects-list li {
+    list-style-type: none;
+    margin: 10px;
+    text-align: center;
+    background: lightgrey;
+}
+
+#projects-list img {
+
+    margin: 10px;
+}
+
+.projects-section {
+    background: lightgrey;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.projects-section img {
+    margin: 10px;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.projects-section a {
+    display: block;
+    margin: 10px;
+    
+}
+
+.projects-description {
+    margin: 10px;
+    color: black;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#projects-list ul{
+    padding-left: 0px;
+}
+
+#projects-list a {
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background: darkgray;
+    color: black;
+    font-weight: bold;
+}
+
+#projects-list a:hover {
+    background: lightblue
+}
+
+
 /* Images */
 
 
