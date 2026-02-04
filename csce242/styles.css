@@ -69,6 +69,8 @@ body {
 
 #assignments-list ul{
     padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Projects */
@@ -91,7 +93,6 @@ body {
 }
 
 #projects-list img {
-
     margin: 10px;
 }
 
