@@ -1,0 +1,118 @@
+body {
+    background-color: lightblue;
+}
+
+.tile {
+    height: auto;
+    background-color: lightsalmon;
+    margin-bottom: 0px;
+    border: black solid 2px;
+}
+
+.tile-content {
+    display: flex; /* Center Items To Div */ 
+    justify-content: center; /* Center Items To Div */ 
+    flex-direction: column; /* Center Items To Div */ 
+    align-items: center; /* Center Items To Div */ 
+}
+
+/*Typography */
+#main-content h1 {
+    text-align: center;
+    color: lightsalmon;
+    font-weight: bold;
+}
+
+#main-content h2 {
+    text-align: center;
+    color: lightseagreen;
+    font-weight: bold;
+}
+
+.tile h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#main-footer a {
+    font-size: 15px;
+    color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .columns {
+        display:flex;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    .six {
+        flex: 6;
+    }
+
+    .tile {
+        height: 300px;
+        background-color: lightsalmon;
+        margin: 50px;
+        border: black solid 2px;
+    }
+
+    /*Typography */
+    #main-content h1 {
+        text-align: center;
+        color: lightsalmon;
+        font-weight: bold;
+    }
+
+    #main-content h2 {
+        text-align: center;
+        color: lightseagreen;
+        font-weight: bold;
+    }
+
+    .tile h3 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .triangle {
+        visibility: hidden;
+        margin: 20px;
+        width: 0;
+        height: 0;
+        border-left: 25px solid transparent;
+        border-right: 25px solid transparent;
+        border-bottom: 50px solid #555;
+    }
+
+    .visible {
+        visibility: visible;
+    }
+
+    .frame-image {
+        padding: 5px;
+        visibility: visible;
+    }
+    
+}
