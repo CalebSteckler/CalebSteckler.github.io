@@ -1,0 +1,27 @@
+body {
+    background-color: beige;
+}
+
+.columns {
+        display:flex;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    .six {
+        flex: 6;
+    }
