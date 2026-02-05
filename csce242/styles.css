@@ -126,7 +126,7 @@ body {
     padding-bottom: 10px;
 }
 
-#projects-list ul{
+#projects-list ul {
     padding-left: 0px;
     display: flex;
     flex-wrap: wrap;
