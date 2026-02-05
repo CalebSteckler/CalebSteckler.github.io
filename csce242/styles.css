@@ -73,6 +73,11 @@ body {
     flex-wrap: wrap;
 }
 
+#projects-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Projects */
 
 #projects-header {
@@ -121,8 +126,10 @@ body {
     padding-bottom: 10px;
 }
 
-#projects-list ul{
+#projects-section ul{
     padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #projects-list a {
@@ -210,6 +217,5 @@ p {
 
     #assignments-list ul {
         display: flex;
-        
     }
 }
