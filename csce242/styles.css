@@ -1,6 +1,12 @@
 /* Structure*/
+:root {
+    --main-background: beige;
+    --main-assignments: darkgray;
+    --button-hover: lightblue;
+}
+
 body {
-    background: beige;
+    background: var(--main-background);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -10,7 +16,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
-    background: darkgray;
+    background: var(--main-assignments);
     color: black;
     font-weight: bold;
 }
@@ -136,7 +142,7 @@ body {
     border-radius: 10px;
     padding: 10px;
     text-decoration: none;
-    background: darkgray;
+    background: var(--main-assignments);
     color: black;
     font-weight: bold;
 }
