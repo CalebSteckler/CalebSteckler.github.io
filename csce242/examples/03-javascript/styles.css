@@ -1,3 +1,7 @@
+:root {
+    --donation: 0%;
+}
+
 body {
     background-color: beige;
 }
@@ -60,13 +64,63 @@ body {
     }
 }
 
-    .hide-small { /* hiding something for smaller screens */
+/* Donation */
+#donations {
+    padding: 10px;
+}
 
-    }
+#thermometer {
+    width: 25%;
+    height: 200px;
+    margin-right: 10%;
+    border: 1px solid black;
+    background: linear-gradient(0deg, red var(--donation), white var(--donation));
 
-    #main-nav {
+   /*Regular Linear Gradient background: linear-gradient(0deg, pink 0%, blue 50%, yellow 100%); */
+}
 
-    }
+
+
+
+
+
+#main-header {
+    background:#00CED1;
+    border-radius:5px;
+    position:relative;
+}
+
+#toggle-nav {
+    position:absolute;
+    top:15px;
+    right:15px;
+}
+#toggle-nav div {
+    width:25px;
+    height:2px;
+    background-color:white;
+    margin:6px 0;
+}
+
+nav ul {
+    padding-left:0;     /* Remove indentation */
+}
+
+nav li {
+    list-style-type:none;   /* Remove bullet */
+    background:#90e0ef;
+    padding:5px;
+}
+
+nav li:not(:last-child) {
+    border-bottom:1px solid white;;
+}
+
+nav a {
+    text-decoration: none;  /* Remove underline */
+    color:white;
+}
+
 
 @media (min-width: 600px) {
 
