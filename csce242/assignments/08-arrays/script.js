@@ -1,5 +1,19 @@
-Treaty Oak:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/JLOSjX6ZqrYB9sRT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+const rockingSongs = ["Treaty Oak", "Treaty Oak", "Treaty Oak", "Treaty Oak", "Treaty Oak"];
+const slowSongs = ["Sturgill Simpson", "Sturgill Simpson", "Sturgill Simpson", "Sturgill Simpson", "Sturgill Simpson"];
 
-Sturgill Simpson:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bD5Xc8PBIsTH5F-_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+document.getElementById("mood-input").onchange = () => {
+    const moodSelect = document.getElementById("mood-input");
+    const selectedMood = moodSelect.value;
+    const songList = document.getElementById("song-list");
+    
+    
+    if(selectedMood === "rocking") {
+        rockingSongs.forEach((rockSong) => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            rockingSongs.append(li);
+            li.append(a);
+            a.innerHTML = rockSong;
+        });
+    }
+}
