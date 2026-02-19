@@ -1,0 +1,23 @@
+:root {
+    --text-1: #d62828;
+    --background: #003049;
+    --text-2: #fcbf49;
+    --text-3: #eae2b7;
+}
+
+body {
+    text-align: center;
+    background-color: var(--background);
+}
+
+h1 {
+    color: var(--text-2);
+}
+
+h2 {
+    color: var(--text-1);
+}
+
+label {
+    color: white;
+}
