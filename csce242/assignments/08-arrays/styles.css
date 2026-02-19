@@ -10,8 +10,9 @@ body {
     background-color: var(--background);
 }
 
-h1 {
+#main-header {
     color: var(--text-2);
+    text-decoration: none;
 }
 
 h2 {

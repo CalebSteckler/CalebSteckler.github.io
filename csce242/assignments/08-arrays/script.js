@@ -10,6 +10,8 @@ document.getElementById("mood-input").onchange = () => {
     
     
     if(selectedMood === "rocking") {
+        songList.innerHTML = "";
+        videoContainer.innerHTML = "";
         rockingSongs.forEach((rockSong) => {
             const li = document.createElement("li");
             const a = document.createElement("a");
@@ -24,6 +26,8 @@ document.getElementById("mood-input").onchange = () => {
             
         });
     } else if(selectedMood === "slow") {
+        songList.innerHTML = "";
+        videoContainer.innerHTML = "";
         slowSongs.forEach((slowSong) => {
             const li = document.createElement("li");
             const a = document.createElement("a");
@@ -32,7 +36,8 @@ document.getElementById("mood-input").onchange = () => {
             a.innerHTML = slowSong;
             a.href = "#";
             a.onclick = () => {
-                videoContainer.innerHTML = slowIDs[slowSong];
+                let id = slowIDs[slowSongs.indexOf(slowSong)];
+                videoContainer.innerHTML = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${id}?si=6tb96BsRlSsJQd8K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
             };
         });
     }
