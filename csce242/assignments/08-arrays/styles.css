@@ -21,3 +21,18 @@ h2 {
 label {
     color: white;
 }
+
+#song-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+#song-list a {
+    color: var(--text-3);
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#song-list li {
+    margin: 20px;
+}
