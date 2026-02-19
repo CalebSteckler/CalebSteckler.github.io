@@ -1,7 +1,7 @@
-const rockingSongs = ["Treaty Oak", "Test 2", "Test 3", "Treaty Oak", "Treaty Oak"];
-const slowSongs = ["Sturgill Simpson", "Sturgill Simpson", "Sturgill Simpson", "Sturgill Simpson", "Sturgill Simpson"];
-const rockingIDs = ["rE-4FDZnXDw?si=Uv5QpxPjKaOWRmzd", "2", "3", "4", "5"];
-const slowIDs = ["qOpAXzr1W1U?si=6tb96BsRlSsJQd8K", "7", "8", "9", "10"];
+const rockingSongs = ["Bad State of Mind - Treaty Oak", "Chase You Down - Braxton Keith", "Taking Water - Billy Strings", "No Way to Know - The Red Clay Strays", "Diamondhead - J.R. Carroll"];
+const slowSongs = ["Sam - Sturgill Simpson", "Can I take My Hounds to Heaven - Tyler Childers", "Fraulein - Colter Wall", "Cowpoke - Colter Wall", "Folsom Prison Blues - Johnny Cash"];
+const rockingIDs = ["rE-4FDZnXDw?si=Uv5QpxPjKaOWRmzd", "KtxUuMVUBfc?si=pJMaMiy79fbLd9xX", "xD7K0x0UusE?si=RLyyTOIk1mHqjdws", "tyGmusvf09o?si=gFFU2A0soWdPynaS", "KmTeepdXyHk?si=4fj3pV1qY9uME0xJ"];
+const slowIDs = ["qOpAXzr1W1U?si=6tb96BsRlSsJQd8K", "I6hyYqC7110?si=G5o_kS5XReGUVo7F", "zUYqNKkJS7k?si=1GG2W0_eIiWKFO4f", "Qy69ucV_sRg?si=opNEpZ5QI9okbL2a", "AeZRYhLDLeU?si=rqxNz1gPm8_BrD8g"];
 document.getElementById("mood-input").onchange = () => {
     const moodSelect = document.getElementById("mood-input");
     const selectedMood = moodSelect.value;
