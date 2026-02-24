@@ -74,6 +74,14 @@ h1 {
     max-width: 900px;
 }
 
+#footer {
+    text-decoration: none;
+    color: var(--text-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal-text {
     margin-left: 20px;
 }
