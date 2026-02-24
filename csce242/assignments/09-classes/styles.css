@@ -1,0 +1,141 @@
+:root {
+    --background-li: #003049;
+    --text-1: #d62828;
+    --text-2: #fcbf49;
+    --background: #eae2b7;
+}
+
+body {
+    background-color: var(--background);
+}
+
+h1 {
+    color: var(--text-1);
+    text-align: center;
+}
+
+#songs {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+#songs ul {
+    list-style-type: none;
+}
+
+#songs li {
+    text-align: center;
+    gap: 10px;
+    background-color: var(--background-li);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.song-title {
+    color: var(--background);
+    text-decoration: underline;
+    padding-top: 10px;
+}
+
+.song-artist {
+    color: var(--background);
+}
+
+.song-album {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Modal - W3Schools style */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: var(--background-li);
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.modal-text {
+    margin-left: 20px;
+}
+
+.modal-body {
+    display: flex;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--background);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+    #songs {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #songs li {
+        width: 100%;
+        height: 100%;
+    }
+
+    .song-album {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .columns {
+        display:flex;
+    }
+
+    .one {
+        flex:1;
+    }
+
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    .six {
+        flex: 6;
+    }
+}

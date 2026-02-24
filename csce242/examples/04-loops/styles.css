@@ -32,21 +32,6 @@ img {
     position:relative;
 }
 
-.arrow {
-    font-size:1.5em;
-    color:white;
-    position:absolute;
-    top:32%;
-}
-
-#prev {
-    left:5%;
-}
-
-#next {
-    right:5%;
-}
-
 #slide-desc {
     position:absolute;
     bottom:5%;
@@ -54,6 +39,10 @@ img {
     background:rgba(255,255,255, 0.8);
     padding:5px;
     max-width:40%;
+}
+
+#movie {
+    width:100%;
 }
 
 /* Gallery */
@@ -80,6 +69,43 @@ button {
 
 button:disabled {
     background:gray;
+}
+
+/* tables */
+table {
+    border-collapse: collapse;
+}
+table th, table td {
+    padding:5px;
+    border:1px solid darkslategray;
+}
+
+table th {
+    background-color: #05668d;
+    color:white;
+}
+
+/* Slideshow */
+#slideshow {
+    position:relative;
+}
+
+.arrow {
+    display:block;
+    font-size:5em;
+    text-decoration: none;
+    font-weight: 600;
+    position:absolute;
+    top:30%;
+    color:white;
+}
+
+#arrow-prev{
+    left:5%;
+}
+
+#arrow-next {
+    right:5%;
 }
 
 /* Navigation */
@@ -166,18 +192,6 @@ nav a {
     }
 }
 
-/* Tables */
-
-table th, table td {
-    padding: 5px;
-    border: 1px solid black;
-    text-align: center;
-}
-
-table {
-    border-collapse: collapse;
-}
-
 /* Thermometer */
 #thermometer {
     width:25%;
@@ -212,8 +226,8 @@ a {
     display:none;
 }
 
-#movie {
-    width:100%;
+.hidden {
+    display:none;
 }
 
 /* Larger devices */
@@ -233,7 +247,7 @@ a {
     }
 
     #gallery section {
-        width:22%;
+        width:40%;
     }
 
     .one {
