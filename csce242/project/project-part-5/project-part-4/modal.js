@@ -1,0 +1,1 @@
+https://api.stlouisfed.org/fred/series/search?api_key=57ef605cd706e56a6c00b2cffc8e549c&search_text=canada
