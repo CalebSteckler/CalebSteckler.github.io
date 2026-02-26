@@ -109,20 +109,32 @@ const modalClose = () => {
 modalClose();
 
 const loadCountryInfo = (country) => {
-    const modalCountryName = document.createElement("h2");
-    const countryContentDiv = document.getElementById("country-content");
-    countryContentDiv.appendChild(modalCountryName);
+  const modalCountryName = document.createElement("h2");
+  const countryContent = document.getElementById("country-content");
+  countryContent.innerHTML = "";
+  modalCountryName.id = "modalCountryName";
+  modalCountryName.innerHTML = country.name;
+  countryContent.appendChild(modalCountryName);
+  const fredData = document.createElement("p");
+  fredData.id = "fredData";
+  countryContent.appendChild(fredData);
+  fredData.classList.add("fred-data");
+  getFredData(fredData);
+}
 
-    // Need to replace Country Name when another country is loaded
-    
-    if (exists("modalCountryName")) {
-        modalCountryName.innerHTML = country.name;
-    } else {
-        modalCountryName.id = "modalCountryName";
-    }
 
-    
-    modalCountryName.innerHTML = country.name;
+
+const getFredData = (container) => {
+  fetch('http://localhost:3000/api/series/UNRATE')
+    .then(response => response.json())
+    .then(data => {
+      const observations = data.observations;
+      const latestObs = observations[observations.length - 1];
+
+      container.innerHTML = latestObs.value;
+      console.log('FRED Data:', latestObs.value);
+    })
+    .catch(error => console.error('Error:', error));
 }
 
 const exists = (id) => {

@@ -113,6 +113,10 @@ body {
     color: black;
 }
 
+.fred-data {
+    color: black;
+}
+
 .suggestions.open {
     display: block;
 }
@@ -171,12 +175,23 @@ body {
     animation: slide-in 0.5s ease-in-out;
 }
 
+/* utility states */
 .invisible {
     visibility: hidden !important;
 }
 
 .visible {
     visibility: visible !important;
+}
+
+/* mobile nav should not take up layout space when hidden */
+@media (max-width: 768px) {
+    #main-nav-list.invisible {
+        display: none !important;
+    }
+    #main-nav-list.visible {
+        display: block !important;
+    }
 }
 
 #nav-title {
