@@ -22,6 +22,24 @@
                 <img id="hero-image" src="project-part-4/images/hero-image.png" alt="Hero Image">
                 <h1 class="page-header">Contact Us</h1>
             </div>
+            <div id="form-section">
+                <form id="contact-form" method="POST">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea name="message" required></textarea>
+                    </p>
+                    <button type="submit" id="submit-button">Submit</button>
+                  </form>
+                  <div id="form-result"></div>
+            </div>
             <div id="contact-content">
                 <h3 id="contact-info-header">Contact Us</h3>
                     <div class="contact-info-row">
@@ -49,5 +67,6 @@
             </div>
         </div>
         <script src="project-part-4/nav.js"></script>
+        <script src="contact.js"></script>
     </body>
 </html>

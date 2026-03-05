@@ -1,11 +1,10 @@
-const form = document.getElementById('contact-form');
-const submitBtn = form.querySelector('button[type="submit"]');
+const contactDiv = document.getElementById("contact-form");
+const submitBtn = contactDiv.querySelector('button[type="submit"]');
 
-
-form.addEventListener('submit', async (e) => {
+contactDiv.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(form);
+    const formData = new FormData(contactDiv);
     formData.append("access_key", "ae32246b-accb-4c1d-a169-13ada46525ef");
 
     const originalText = submitBtn.textContent;
@@ -23,7 +22,7 @@ form.addEventListener('submit', async (e) => {
 
         if (response.ok) {
             alert("Success! Your message has been sent.");
-            form.reset();
+            contactDiv.reset();
         } else {
             alert("Error: " + data.message);
         }

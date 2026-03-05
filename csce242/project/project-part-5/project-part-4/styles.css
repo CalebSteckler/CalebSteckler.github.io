@@ -30,6 +30,10 @@ body {
     position: relative;
 }
 
+#form-section {
+    text-align: center;
+}
+
 #hero-image {
     width: 100%;
     height: auto;
