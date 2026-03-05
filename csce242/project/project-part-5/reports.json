@@ -3,12 +3,12 @@
         "title": "Report 1",
         "author": "Author 1",
         "date": "2024-01-01",
-        "img": "project-part-4/images/report-icon.png"
+        "img": "report-icon.png"
     },
     {
         "title": "Report 2",
         "author": "Author 2",
         "date": "2024-01-01",
-        "img": "project-part-4/images/report-icon.png"
+        "img": "report-icon.png"
     }
 ]
