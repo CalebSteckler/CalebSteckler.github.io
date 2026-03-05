@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Form Example</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Contact Form Example</h1>
+        <div id="main-content" class="columns">
+            <section class="one tile">
+                <h2>Contact Us</h2>
+                <form id="contact-form" method="POST">
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea name="message" required></textarea>
+                    </p>
+                    <button type="submit" id="submit-button">Submit</button>
+                  </form>
+                  <div id="form-result"></div>
+            </section>
+            <section class="one tile">
+                <h2>Find Us</h2>
+                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.07947439458!2d-81.03601122431616!3d33.99452127317877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bac767eac5a7%3A0x30816f9ab195bb29!2sDarla%20Moore%20School%20of%20Business!5e1!3m2!1sen!2sus!4v1772547184289!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>        
+        
+        <script src="contact.js"></script>
+    </body>
+</html>
